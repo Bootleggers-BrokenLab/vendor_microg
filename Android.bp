@@ -9,11 +9,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-    required: [
-        "default-permissions-com.google.android.gms.xml",
-        "privapp-permissions-com.google.android.gms.xml",
-        "sysconfig-com.google.android.gms.xml"
-    ],
 }
 
 android_app_import {
@@ -25,10 +20,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-    required: [
-        "default-permissions-com.android.vending.xml",
-        "privapp-permissions-com.android.vending.xml"
-    ],
 }
 
 android_app_import {
@@ -41,37 +32,4 @@ android_app_import {
 	},
 	privileged: true,
 }
-
-prebuilt_etc {
-    name: "default-permissions-com.google.android.gms.xml",
-    src: "prebuilt/system/etc/default-permissions/default-permissions-com.google.android.gms.xml",
-    sub_dir: "default-permissions",
-}
-
-prebuilt_etc {
-    name: "privapp-permissions-com.google.android.gms.xml",
-    src: "prebuilt/system/etc/permissions/privapp-permissions-com.google.android.gms.xml",
-    sub_dir: "permissions",
-}
-
-prebuilt_etc {
-    name: "sysconfig-com.google.android.gms.xml",
-    src: "prebuilt/system/etc/sysconfig/sysconfig-com.google.android.gms.xml",
-    sub_dir: "sysconfig",
-}
-
-prebuilt_etc {
-    name: "default-permissions-com.android.vending.xml",
-    src: "prebuilt/system/etc/default-permissions/default-permissions-com.android.vending.xml",
-    sub_dir: "default-permissions",
-}
-
-prebuilt_etc {
-    name: "privapp-permissions-com.android.vending.xml",
-    src: "prebuilt/system/etc/permissions/privapp-permissions-com.android.vending.xml",
-    sub_dir: "permissions",
-}
-
-
-
 
